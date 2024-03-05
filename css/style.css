@@ -1,0 +1,91 @@
+/* 
+// *** *** *** Custom Properties *** *** *** 
+*/
+:root {
+    /* *** Layout *** */
+    --w-mob-layout: 375px;
+    --w-desk-layout: 1440px;
+    /* *** Typography *** */
+    --f-family: "Red Hat Display", sans-serif; /* Weights: 500, 700, 900 */
+    --f-size: 16px;
+    /* *** Colors *** */
+    --color-white: #fff;
+    --color-pale-blue: hsl(225, 100%, 94%);
+    --color-bright-blue: hsl(245, 75%, 52%);
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-desaturated-blue: hsl(224, 23%, 55%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+/* 
+// *** *** *** Reset *** *** *** 
+*/
+html {
+    box-sizing: border-box;
+    font-family: var(--f-family);
+    font-size: var(--f-size);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+a { text-decoration: none; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul, ol { margin: 0; }
+
+hr {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+p { line-height: 1.5rem; }
+
+/* 
+// *** *** *** Site Styles *** *** *** 
+*/
+#root {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-pale-blue);
+    background-image: url(../assets/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.main { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    padding-block: 4.45rem;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #root { background-image: url(../assets/images/pattern-background-desktop.svg); }
+    .main { padding-block: 6.4rem; }
+}

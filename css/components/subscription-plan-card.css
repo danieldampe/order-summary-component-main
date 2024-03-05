@@ -1,0 +1,57 @@
+/* 
+// *** *** *** Subscription Plan Card *** *** ***
+*/
+.subscription-plan-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    --f-size-txt: 0.9rem;
+    background-color: var(--color-very-pale-blue);
+}
+
+/* 
+// *** *** *** Icon *** *** ***
+*/
+.subscription-plan-card-icon { margin-right: 1.25rem; }
+
+/* 
+// *** *** *** Details *** *** ***
+*/
+.subscription-plan-card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-plan-card-mod { 
+    font-size: var(--f-size-txt);
+    font-weight: 900;
+    color: var(--color-dark-blue); 
+}
+
+.subscription-plan-card-cst { 
+    font-size: var(--f-size-txt);
+    font-weight: 500;
+    color: var(--color-desaturated-blue); 
+}
+
+/* 
+// *** *** *** Button *** *** ***
+*/
+.subscription-plan-card-btn {
+    margin-left: auto;
+    font-size: calc(var(--f-size-txt) - 0.1rem);
+    font-weight: 700;
+    color: var(--color-bright-blue);
+    text-decoration: underline;
+}
+
+.subscription-plan-card-btn:hover { 
+    text-decoration: none;
+    filter: opacity(0.5); 
+}
+
+@media screen and (min-width: 1024px) {
+    .subscription-plan-card { --f-size-txt: 1rem }
+    .subscription-plan-card { padding: 1.5rem; }
+}

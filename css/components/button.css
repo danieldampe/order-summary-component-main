@@ -1,0 +1,25 @@
+/* 
+// *** *** *** Button *** *** ***
+*/
+.btn {
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: calc(var(--f-size) - 0.5px);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: var(--color-white);
+    background-color: var(--color-bright-blue);
+}
+
+.btn-ghost {
+    padding: 0.25rem;
+    color: var(--color-desaturated-blue);
+    background-color: transparent;
+}
+
+.btn-primary:hover { filter: opacity(0.5); }
+
+.btn-ghost:hover { color: var(--color-dark-blue); }
