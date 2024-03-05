@@ -12,6 +12,7 @@
 .btn-primary {
     color: var(--color-white);
     background-color: var(--color-bright-blue);
+    box-shadow: 0 10px 20px #0005;
 }
 
 .btn-ghost {

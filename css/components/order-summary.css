@@ -6,6 +6,7 @@
     border-radius: 20px;
     background-color: var(--color-white);
     overflow: hidden;
+    box-shadow: 10px 10px 20px #0003;
 }
 
 /* 
